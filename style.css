@@ -1,0 +1,56 @@
+.main-board{
+    display:grid;
+    grid-template-columns: 1fr 5fr;
+    background-color: burlywood;
+}
+
+.game-board{
+    display:grid;
+    background-color:antiquewhite;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: repeat(3,200px);
+    gap: 10px;
+    grid: 1cm;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.square{
+    background-color: burlywood;
+    transition: 10ms;
+    transition: ease-out;
+    color: aliceblue;
+    text-align: center;
+    font-size: 180px;
+}
+
+.square:hover,.x,.o{
+    cursor: pointer;
+    transform:scale(1.05);    
+}
+
+.sidebar{
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    font-size: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.chooseplayer{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    background-color: cadetblue;
+    gap:10px;
+    margin: 0;
+}
+
+.x,.o{
+    display: flex;
+    align-self: flex-end;
+    justify-content: center;
+    background-color: rgb(41, 38, 36);
+}
